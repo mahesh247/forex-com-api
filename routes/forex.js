@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var MongoClient = require('mongodb').MongoClient;
 var MongoURL = "mongodb://stockxuser:stockxuser@ds125479.mlab.com:25479/stockx";
-var limit = 20
+var limit = 21
 
 /* GET home page. */
 router.get('/', function(req, res, next) {

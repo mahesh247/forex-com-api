@@ -47,6 +47,7 @@ app.use('/forex', forex);
 //app.use('/forex-db', forex_db);
 //app.use('/todaysprice-db', todaysprice_db);
 app.use('/cron', cron);
+app.use('/forex-cron', forexcron);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
