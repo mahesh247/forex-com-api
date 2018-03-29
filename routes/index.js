@@ -6,7 +6,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   var date = new Date()
   var year = date.getFullYear()
-  res.render('index', { title: 'Stock-X App', year: year });
+  res.render('index', { title: 'NP Forex Commodity App', year: year });
   //res.sendFile(path.join(__dirname+'/index.html'));
 });
 

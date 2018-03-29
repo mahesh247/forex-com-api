@@ -15,11 +15,10 @@ var forex = require('./routes/forex');
 
 //Cron
 var forexcron = require('./routes/forex-cron');
-//var stocklive = require('./routes/stocklive');
-//var commodity_db = require('./routes/commodity-db');
-//var forex_db = require('./routes/forex-db');
-//var todaysprice_db = require('./routes/todaysprice-db');
-var cron = require('./routes/cron');
+var commoditycron = require('./routes/commodity-cron');
+var todayspricecron = require('./routes/todaysprice-cron');
+var stocklive = require('./routes/stocklive');
+//var cron = require('./routes/cron');
 
 var app = express();
 
@@ -42,12 +41,11 @@ app.use('/about', about);
 app.use('/commodity', commodity);
 app.use('/todaysprice', todaysprice);
 app.use('/forex', forex);
-//app.use('/stocklive', stocklive);
-//app.use('/commodity-db', commodity_db);
-//app.use('/forex-db', forex_db);
-//app.use('/todaysprice-db', todaysprice_db);
-app.use('/cron', cron);
+app.use('/stocklive', stocklive);
+//app.use('/cron', cron);
 app.use('/forex-cron', forexcron);
+app.use('/commodity-cron', commoditycron);
+app.use('/todaysprice-cron', todayspricecron);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
