@@ -1,0 +1,32 @@
+extends layout
+
+block content
+    include ./includes/nav.pug
+
+    .container
+      .mt-3
+        h1= title
+
+        p This site is build with an aim to provide an API interface for returing data which may be further used to in various website as data source.
+
+        p Stock-X App uses different website site for the data provided and are mentioned as follows:
+
+        ol
+            li 
+                a(href="/stocklive" target="_blank") Nepal Stock Live 
+                | json collects data from 
+                a(href="//nepalstock.com" target="_blank") Nepal Stock
+            li 
+                a(href="/todaysprice" target="_blank") Today's Price 
+                | json collects data from 
+                a(href="//nepalstock.com" target="_blank") Nepal Stock
+            li 
+                a(href="/commodity" target="_blank") Commodity Price 
+                | json collects data from 
+                a(href="//fenegosida.org" target="_blank") Fenegosida
+            li 
+                a(href="/forex" target="_blank") Nepal FOREX 
+                | json collects data from 
+                a(href="//nrb.org.np" target="_blank") Nepal Rastra Bank
+
+    include ./includes/footer.pug

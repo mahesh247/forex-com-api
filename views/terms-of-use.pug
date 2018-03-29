@@ -1,0 +1,25 @@
+extends layout
+
+block content
+    include ./includes/nav.pug
+
+    .container
+      .mt-3
+        h1= title
+
+        ol
+            li You are free to copy, distribute, adapt, display or include the data from this website for commercial and noncommercial purposes.
+
+        h4 Our Services
+
+        ol
+            li 
+                a(href="/stocklive" target="_blank") Nepal Stock Live 
+            li 
+                a(href="/todaysprice" target="_blank") Today's Price 
+            li 
+                a(href="/commodity" target="_blank") Commodity Price  
+            li 
+                a(href="/forex" target="_blank") Nepal FOREX 
+
+    include ./includes/footer.pug
